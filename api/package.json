@@ -18,11 +18,9 @@
   "node": "16.17.0"
   },
   "scripts": {
-    "start": "cd api && node server.js",
-    "build": "cd client && npm install && npm run build",
-    "api": "nodemon server.js --ignore client",
-    "client": "cd client && npm start",
-    "dev": "nodemon server.js && cd client npm run start"
+    "start": "nodemon api/server.js",
+    "client": "npm start --prefix client",
+    "dev": "npm start" 
 },
   "author": "Cletus Ogah <ogahcletus@gmail.com>",
   "license": "ISC",
